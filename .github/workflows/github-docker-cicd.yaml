@@ -71,11 +71,10 @@ jobs:
           docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
       # Log into Docker Hub account
 
-      - name: Get current date
-        id: date
+      - name: Set environment variable
         run: |
-          echo "Karim1" >> $GITHUB_ENV
-      # Get the current date and save it in $GITHUB_ENV
+          echo "DATE=Karim1" >> $GITHUB_ENV
+      # Set the DATE environment variable
 
       - name: Show the DATE variable
         run: |
