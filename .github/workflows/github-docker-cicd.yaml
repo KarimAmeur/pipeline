@@ -73,7 +73,7 @@ jobs:
 
       - name: Set environment variable
         run: |
-          echo "DATE=Karim1" >> $GITHUB_ENV
+          echo "DATE=karim1" >> $GITHUB_ENV
       # Set the DATE environment variable
 
       - name: Show the DATE variable
